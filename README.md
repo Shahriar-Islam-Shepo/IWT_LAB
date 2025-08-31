@@ -14,4 +14,10 @@ Lab Class-2
           CSS:
           background-color,font-family,color (including rgba())
           ,text-align,width, height,background image add,selector
-          
+Lab Class-3
+          HTML:
+          1.Meta tags
+          2.Tables
+          3.Divs,Span
+          4.Iframe,Forms,list
+         
