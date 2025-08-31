@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Accordion</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>City Accordion</h1>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Paris <span class="badge">New</span></div>
+      <div class="accordion-body">
+        <div class="alert">
+          Paris is the capital city of France, known for its art, fashion, gastronomy, and culture.
+          Iconic landmarks include the Eiffel Tower, Notre-Dame Cathedral, and Louvre Museum.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Tokyo</div>
+      <div class="accordion-body">
+        <div class="alert">
+          Tokyo is the capital of Japan, famous for its modern skyscrapers, anime culture, and traditional temples.
+          It is one of the world's most populous metropolitan areas with vibrant city life.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">New York</div>
+      <div class="accordion-body">
+        <div class="alert">
+          New York City is a major city in the USA, known for Times Square, Central Park, and the Statue of Liberty.
+          It is a cultural and financial hub with diverse communities and attractions.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const body = header.nextElementSibling;
+        body.classList.toggle('open');
+        if (body.style.maxHeight) {
+          body.style.maxHeight = null;
+        } else {
+          body.style.maxHeight = body.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
