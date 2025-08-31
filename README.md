@@ -6,4 +6,12 @@ Lab Class-1:
             2.paragraph tag
             3.Anchor tag
             4.image tag
-            
+Lab Class-2
+          HTML:
+          1.inline,internal,external styling    
+          2.abbreviation , mailto tag
+          3.image map , Responsive Image 
+          CSS:
+          background-color,font-family,color (including rgba())
+          ,text-align,width, height,background image add,selector
+          
